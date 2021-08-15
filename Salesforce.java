@@ -38,11 +38,16 @@ public class Salesforce {
 		 Select Country=new Select(dd3);
 		 Country.selectByValue("IN");
 		 
+		 WebElement checkbox=driver.findElementByClassName("checkbox-ui");
+		/* for(int i=0;i<2;i++)
+		 {
+			 checkbox.click();
+			 System.out.println("Agree checkbox is checked");
+		 }*/
 		 
-		 
-	 
-		  
-		   
+		 	checkbox.click();
+		 	
+		 				
 		 		 
 	}
 
