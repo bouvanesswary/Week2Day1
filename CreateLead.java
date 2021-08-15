@@ -20,7 +20,7 @@ public class CreateLead {
 		 System.out.println(title);
 		 
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 
+		
 		 //locateUsername and Password
 		WebElement webUser=driver.findElementById("username");
 		webUser.sendKeys("demosalesmanager");
@@ -39,11 +39,23 @@ public class CreateLead {
 		driver.findElementByName("personalTitle").sendKeys("Mrs");
 		driver.findElementByName("generalProfTitle").sendKeys("Software Tester");
 		driver.findElementByName("birthDate").sendKeys("08/14/21");
-		//driver.findElementByName("departmentName").sendKeys("Bouvanesswary");
-		//driver.findElementByName("companyName").sendKeys("Bouvanesswary");
-		//driver.findElementByName("companyName").sendKeys("Bouvanesswary");
+		driver.findElementByName("annualRevenue").sendKeys("2000000");
+		driver.findElementById("createLeadForm_departmentName").sendKeys("Research");
+		driver.findElementById("createLeadForm_numberEmployees").sendKeys("20000");
+		driver.findElementById("createLeadForm_sicCode").sendKeys("2521");
+		driver.findElementById("createLeadForm_tickerSymbol").sendKeys("%");
+		driver.findElementById("createLeadForm_description").sendKeys("ajsdbhfkwjhbg");
+		driver.findElementById("createLeadForm_importantNote").sendKeys("its important");
+		//driver.findElementByName("primaryPhoneAreaCode").sendKeys("0112");
+		driver.findElementById("createLeadForm_primaryPhoneNumber").sendKeys("226818768");
+		driver.findElementById("createLeadForm_primaryPhoneAskForName").sendKeys("abi");
+		driver.findElementById("createLeadForm_primaryEmail").sendKeys("Bouvanesswary@gmail.com");
+		driver.findElementById("createLeadForm_primaryWebUrl").sendKeys("http://leaftaps.com/crmsfa/control/createLeadForm");
+		driver.findElementById("createLeadForm_generalToName").sendKeys("Pranav");
+		driver.findElementById("createLeadForm_generalPostalCode").sendKeys("605120");
+		driver.findElementById("createLeadForm_generalCity").sendKeys("california");
 		
-		
+			
 		WebElement drop1=driver.findElementByName("dataSourceId");
 		Select source=new Select(drop1);
 		source.selectByVisibleText("Cold Call");
